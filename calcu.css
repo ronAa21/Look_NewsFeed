@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+}
+
+.mainCalc{
+  
+}
+
+button{
+  background-color: rgba(128, 128, 128, 0.363);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 25%;
+  border: 0;
+  font-size: 25px;
+}
+
+.numbers{
+  color: white;
+}
+
+.operate{
+  color: rgb(247, 182, 5);
+}
+
+.equals{
+  background-color: rgb(247, 182, 5);
+  color: white;
+}
+
+#showy {
+  background-color: rgb(59, 59, 59);
+  border-radius: 5%;
+  display:inline;
+  margin: 0;
+  font-size: 50px;
+  color: white;
+}

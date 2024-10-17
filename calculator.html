@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calcu.css">
+  <title>Calculator vAlpha</title>
+</head>
+<body>
+
+<div class="showScreen">
+
+<p id = "showy"></p>
+
+</div>
+
+ <div class="mainCalc"> 
+ <p>
+  <button class="numbers" onclick="
+
+    cal('1');
+    ">
+    1
+  </button>
+
+  <button class="numbers" onclick="
+  
+  cal('2');
+  ">
+    2
+  </button>
+
+  <button class="numbers" onclick="
+  
+  cal('3');
+  ">
+    3
+  </button>
+
+  <button class="operate" onclick="
+  
+  cal(' + ');
+  ">
+    +
+  </button>
+</p>
+
+<p>
+ <button class="numbers" onclick="
+  
+  cal('4');
+  ">
+  4
+ </button> 
+
+ <button class="numbers" onclick="
+ 
+ cal('5');
+ ">
+  5
+ </button>
+
+ <button class="numbers" onclick="
+ 
+ cal('6');
+ ">
+  6
+ </button>
+
+ <button class="operate" onclick="
+ 
+ cal(' - ');
+ ">
+  -
+ </button>
+</p>
+
+<p>
+  <button class="numbers" onclick="
+    
+  cal('7');
+    ">
+    7
+  </button>
+
+  <button class="numbers" onclick="
+  
+  cal('8');
+  ">
+    8
+  </button>
+
+  <button class="numbers" onclick="
+  
+  cal('9');
+  ">
+    9
+  </button>
+
+  <button class="operate" onclick="
+  
+  cal(' * ');
+  ">
+    x
+  </button>
+</p>
+
+<p>
+<button class="numbers" onclick="
+
+cal('0');
+">
+  0
+</button>
+
+<button class="numbers" onclick="
+
+cal('.');
+">
+.
+</button>
+
+<button class="equals" onclick="
+calculation = eval(calculation);
+cal('');
+">
+  =
+</button>
+
+<button class="operate" onclick="
+calculation = '';
+cal('');
+">
+  C
+</button>
+</p>
+</div>
+
+<script>
+
+    let calculation = '';
+
+    function cal(x){
+
+    calculation += x;
+    document.getElementById("showy").innerHTML =(calculation);
+
+    }
+
+</script>
+
+</body>
+</html>

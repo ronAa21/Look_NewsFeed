@@ -1,0 +1,153 @@
+body{
+  background:linear-gradient(to right, #000000, #40403c, #49493b);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: Karla;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+li {
+  padding-left: 0;
+  padding-top: 20px;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#head{
+  color: #898383;
+  margin-left: 10px;
+}
+
+.logo{
+  margin-left: 5px;
+  display: flex;
+}
+
+.logopic {
+  border-radius: 50%;
+  padding-top: 3%;
+  width: 50px;
+  height: 50px;
+}
+
+.off-screen-menu {
+  background-color: #49493b;
+  height: 100vh;
+  width: 40%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  font-size: 3rem;
+  transition: .3s ease;
+}
+
+.off-screen-menu.active{
+  right: 0;
+}
+
+.heading {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+}
+
+nav {
+  padding: 3px;
+  align-items: center;
+  display: flex;
+  background: linear-gradient(to right, #000000, #40403c, #49493b);
+}
+
+.ham-menu{
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+}
+
+.ham-menu span {
+  height: 2px;
+  width: 70%;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1){
+  top: 20px;
+}
+
+.ham-menu span:nth-child(3){
+  top: 30px;
+}
+
+.ham-menu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+  opacity: 0%;
+}
+
+.ham-menu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+#prodoffer{
+  padding-top: 80px;
+  font-size: 25px;
+}
+
+
+.products{
+  margin-top: 250px;
+  background-color: #d9d9d9;
+  text-align: center;
+  padding-bottom: 40%;
+}
+
+.prodGallery{
+  flex-direction: row;
+  margin-top: 80px;
+  justify-content: flex-start;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.imgGall{
+  object-fit: cover;
+  flex-basis:  200px;
+  height: 500px;
+  margin-right: 20px;
+}
+
+.prodGallery, .prodInner{
+  flex-direction: row;
+  display: flex;
+    flex: none;
+}
+
